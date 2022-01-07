@@ -5,34 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="dropdownmenu.css">
-    <link rel="stylesheet" href="menuanimation.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="navigate">
-                <a href="/index.html">
-                    <input type="button" value="Main">
-                 </a>
-                <div class="dropdown-block">
-                <input class="mymenu" type="button" value="Matches">
-                <div class="dropdown">
-                    <a href="/matches_calendar.html">
-                        <input type="button" value="Calendar">
-                     </a>
-                    <input type="button" value="Next game">
-                    <input type="button" value="Raiting">
-                </div>
+            <input type="checkbox" id="#" />
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-                <input type="button" value="News">
-                <a href="/fans.html">
-                    <input type="button" value="Fans">
-                </a>
-                <input type="button" value="Contacts">
-                <input type="button" value="Admin">
-            </div>
+            <ul class="navigate">
+                <li><a href="/index.html">Main</a></li>
+                <li class="list"><a href="/matches_calendar.html">Matches</a>
+                    <ul class="dropdown-block">
+                        <li><a href="#">Calendar of matches</a></li>
+                        <li><a href="#">Next game</a></li>
+                        <li><a href="#">Raiting</a></li>
+                    </ul>
+                </li>    
+                <li><a href="#">News</a></li> 
+                <li><a href="/fans.html">Fans</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
             <div class="logo">
                 <img src="img/Pegatinas_ Daniel Ricciardo.png" alt="Ricciardo Logo">
             </div>
@@ -55,15 +52,14 @@
                     Ricciardo joined Toro Rosso in 2012 full-time after the team changed its driver lineup and drove a Ferrari-powered car for them in 2012 and 2013. In 2014, Ricciardo was promoted to Red Bull as a replacement for the retired Mark Webber alongside multiple time world champion Sebastian Vettel.[4] In his first season with Red Bull under Renault power, Ricciardo finished third in the championship with his first three Formula One wins, in Canada,[5] Hungary,[6] and Belgium.[7]
                     
                     After two years without a victory, Ricciardo returned to the top of the podium at the 2016 Malaysian Grand Prix, eventually sealing third in the championship for the second time in three years at the 2016 Mexican Grand Prix.[8][9] He has since added victories for Red Bull at the Azerbaijan Grand Prix in 2017 and the Chinese and Monaco Grands Prix in 2018. After 2018, Ricciardo signed with Renault and raced for them in the 2019 and 2020 seasons. He joined McLaren for the 2021 and 2022 Formula One seasons, alongside Lando Norris. He obtained his first race win with McLaren at the 2021 Italian Grand Prix.</p>
-                    <input type="button" value="show more" class="show-more">
             </div>
         </div>
-        <div class="last_win">
+        <div class="story ">
             <div>
                 <img src="img/Daniel Ricciardo P1.jfif" alt="Ricciardo podium">
             </div>
             <div>
-                <p> the start of the race, Ricciardo got a better start than polesitter Max Verstappen and took the lead into turn 1. He held off Verstappen for 21 laps, surviving a safety car restart and late pressure from Norris whom he led home to claim his first victory for McLaren while also setting the fastest lap. This was also the team's first win since the 2012 Brazilian Grand Prix and their first 1-2 finish since the 2010 Canadian Grand Prix.</p>
+                <p class="more"> the start of the race, Ricciardo got a better start than polesitter Max Verstappen and took the lead into turn 1. He held off Verstappen for 21 laps, surviving a safety car restart and late pressure from Norris whom he led home to claim his first victory for McLaren while also setting the fastest lap. This was also the team's first win since the 2012 Brazilian Grand Prix and their first 1-2 finish since the 2010 Canadian Grand Prix.</p>
             </div>
         </div>
     </main>

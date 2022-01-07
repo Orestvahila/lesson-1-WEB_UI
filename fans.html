@@ -5,33 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="dropdownmenu.css">
     <link rel="stylesheet" href="fans.css">
-    <link rel="stylesheet" href="menuanimation.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="navigate">
-                <a href="/index.html">
-                    <input type="button" value="Main" />
-                 </a>
-                <div class="dropdown-block">
-                <input class="mymenu" type="button" value="Matches">
-                <div class="dropdown">
-                    <a href="/matches_calendar.html">
-                        <input type="button" value="Calendar" />
-                     </a>
-                    <input type="button" value="Next game">
-                    <input type="button" value="Raiting">
-                </div>
+            <input type="checkbox" id="#" />
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-                <input type="button" value="News">
-                <input type="button" value="Fans">
-                <input type="button" value="Contacts">
-                <input type="button" value="Admin">
-            </div>
+            <ul class="navigate">
+                <li><a href="/index.html">Main</a></li>
+                <li class="list"><a href="/matches_calendar.html">Matches</a>
+                    <ul class="dropdown-block">
+                        <li><a href="#">Calendar of matches</a></li>
+                        <li><a href="#">Next game</a></li>
+                        <li><a href="#">Raiting</a></li>
+                    </ul>
+                </li>    
+                <li><a href="#">News</a></li> 
+                <li><a href="/fans.html">Fans</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
             <div class="logo">
                 <img src="img/Pegatinas_ Daniel Ricciardo.png" alt="Ricciardo Logo">
             </div>
