@@ -17,6 +17,9 @@ h2 {
     background-color: #000;
     height: 5px;
 }
+.appeal {
+    padding: 5vw;
+}
 input[type='text'] {
     margin: 5vw;
     width: 50%;

@@ -52,20 +52,51 @@
             </div>
             <div class="review">
                <p>Daniel Ricciardo — the most radiant smile on the grid!! when he’s happy it shows on every part of his face. his nose is amazing and regal as hell</p>  
-            <div>
+                <div>
                     <p class="date">10:41 PM · Jan 2, 2022</p>
                     <p class="reviewer">mar ♡ @sebsmargz</p>
                 </div>
                 <hr class="line"></hr>>
             </div>
         </div>
-        <input type="text">
-        <input type="submit">
+        <div>
+            <input type="text" id='test' value=''>
+            <button onclick="submitMe()" id="testButton" >Надісліти</button>
+        </div>
     </main>
     <footer>
         <div>
             created by Orest Vahila
         </div>
     </footer>
+    <script type="text/javascript">
+        
+
+     function submitMe() {
+        var today = new Date();
+
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            let comment = document.getElementById('test').value;
+            let t = document.getElementsByClassName('appeal')[0];
+            let block = document.createElement('div');
+            block.className = 'review';
+            let tag = document.createElement("p");
+            let text = document.createTextNode(comment);
+            block.appendChild(tag);
+            tag.appendChild(text);
+            t.appendChild(block);
+            let time = document.createElement('p');
+            time.className = 'date';
+            let div = document.createElement('div');
+            div.style.justifyContent = 'left';
+            block.appendChild(div);
+            div.appendChild(time);
+            let currentTime = document.createTextNode(date);
+            time.appendChild(currentTime);
+            let hr = document.createElement('hr');
+            hr.className = "line";
+            block.appendChild(hr);
+    }   
+    </script>
 </body>
 </html>
