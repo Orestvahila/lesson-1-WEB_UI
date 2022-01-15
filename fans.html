@@ -73,9 +73,8 @@
         
 
      function submitMe() {
-        var today = new Date();
-
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            let today = new Date();
+            let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
             let comment = document.getElementById('test').value;
             let t = document.getElementsByClassName('appeal')[0];
             let block = document.createElement('div');
@@ -96,6 +95,7 @@ var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
             let hr = document.createElement('hr');
             hr.className = "line";
             block.appendChild(hr);
+            document.getElementById('test').value = "";
     }   
     </script>
 </body>
